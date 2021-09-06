@@ -1,0 +1,216 @@
+{
+	"siteVersion": "1.135.0",
+	"monster": [
+		{
+			"name": "Candlestick Mage",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 45,
+				"formula": "7d8 + 14"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 12,
+			"con": 14,
+			"int": 16,
+			"wis": 12,
+			"cha": 14,
+			"skill": {
+				"perception": "+5"
+			},
+			"passive": 15,
+			"resist": [
+				"fire",
+				"necrotic"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Drawn to the Flame",
+					"entries": [
+						"When the mage starts its turn within 10 ft. of a Illusionary Candle, it summons 2 ({@dice 1d4}) Boneguards within 20 ft. of the candle. It also has advantage on spell attack rolls and creatures have disadvantage on saving throws against its spells until the end of its turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Flickering Flame",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 120 ft., one target. {@h}11 ({@damage 2d10}) fire damage and the target is Blinded until the start of the student's next turn."
+					]
+				},
+				{
+					"name": "Skin Like Wax",
+					"entries": [
+						"A creature within 60 ft. must succeed on a {@dc 13} Constitution saving throw or take 7 ({@damage 2d6}) fire damage plus 7 ({@damage 2d6}) necrotic damage and the affected creature believes its skin is melting from its bones. On a success, take half as much damage."
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"N"
+			]
+		},
+		{
+			"name": "Boneweaver",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 27,
+				"formula": "5d8 + 5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 12,
+			"con": 12,
+			"int": 15,
+			"wis": 12,
+			"cha": 10,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands Common but can't speak"
+			],
+			"cr": "1",
+			"action": [
+				{
+					"name": "Bone Shards",
+					"entries": [
+						"All creatures within a 30 ft. cone must succeed on a {@dc 13} Dexterity saving throw or take 10 ({@damage 3d6}) piercing damage. On a success, take half as much damage."
+					]
+				},
+				{
+					"name": "Weave Bones {@recharge 5}",
+					"entries": [
+						"Summon {@dice 1d4} friendly",
+						"Boneguards from a Bone Pile within 15 ft."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Boneguard",
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 16,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 13,
+			"int": 6,
+			"wis": 12,
+			"cha": 10,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands Common but can't speak"
+			],
+			"cr": "1/2",
+			"action": [
+				{
+					"name": "Bone Sword",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}
